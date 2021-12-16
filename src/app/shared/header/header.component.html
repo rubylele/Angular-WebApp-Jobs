@@ -1,0 +1,30 @@
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <button class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavAltMarkup"
+          aria-controls="navbarNavAltMarkup"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link" routerLink="/">Main</a>
+      <a class="nav-item nav-link" routerLink="/ads">Jobs</a>
+    </div>
+  </div>
+
+  <span *ngIf="!authService.isLoggedIn">
+        <a class="nav-item nav-link" routerLink="/login">Sign in</a>
+      </span>
+  <span style="color: white; padding-right: 20px;">{{ authService.loggedInUser?.email }}</span>
+  <span *ngIf="authService.isLoggedIn">
+        <a class="nav-item nav-link" routerLink="/profile">Your profile</a>
+      </span>
+  <button *ngIf="authService.isLoggedIn" class="btn" (click)="logout()">
+    <a class="nav-item nav-link">Logout</a>
+  </button>
+</nav>

@@ -1,0 +1,27 @@
+<div>
+<h1>Profile settings</h1>
+<ng-container *ngIf="authService.loggedInUser">
+  Name: {{ authService.loggedInUser.name }}
+  <br>
+  Password: {{ authService.loggedInUser.email }}
+  <br>
+  ID: {{ authService.loggedInUser.id }}
+  <br>
+
+  <button class="btn btn-primary" (click)="onEdit()">Edit</button>
+</ng-container>
+
+<ng-container *ngIf="isEditMode">
+  <form [formGroup]="editForm">
+    <label>Name:</label>
+    <input type="text" formControlName="name" /><br />
+    <label>Password:</label>
+    <input type="password" formControlName="password" /><br />
+    <label>Repeat password:</label>
+    <input type="password" formControlName="repeat_password" /><br />
+    <button class="btn btn-primary" type="button" (click)="onCancelForm()">Cancel</button>
+    <button class="btn btn-primary" type="button" (click)="onSubmitForm()">Submit</button>
+  </form>
+  <button class="btn btn-danger" type="button" (click)="deleteAccount()">Delete Account</button>
+</ng-container>
+</div>

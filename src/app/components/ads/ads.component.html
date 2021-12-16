@@ -1,0 +1,11 @@
+<div class="jumbotron">
+  <ul class="row">
+    <li *ngFor="let ad of ads">
+      <ad-card [ad]="ad"></ad-card>
+    </li>
+  </ul>
+
+  <div *ngIf="authService.role === roles.ORGANIZATION">
+    <create-ad></create-ad>
+  </div>
+</div>

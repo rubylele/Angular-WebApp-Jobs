@@ -1,0 +1,8 @@
+li {
+  list-style-type: none;
+}
+div {
+  margin-left: auto;
+  margin-right: auto;
+  width: 6em
+}

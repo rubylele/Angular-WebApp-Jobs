@@ -1,0 +1,160 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "user1",
+      "password": "12345",
+      "name": "user1"
+    },
+    {
+      "id": 2,
+      "email": "user2",
+      "password": "12345",
+      "name": "user2"
+    }
+  ],
+  "organizations": [
+    {
+      "id": 2,
+      "email": "admin",
+      "password": "1234",
+      "name": "admin"
+    }
+  ],
+  "ads": [
+    {
+      "id": 7,
+      "title": "Python Dev.",
+      "description": "We are in need for an independent Python Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "full-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "You are rejected!",
+        "2": "You are accepted!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 17,
+      "title": "Python Dev. 2",
+      "description": "We are in need for an independent Python Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "part-time",
+      "category": "Development",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "You are rejected!",
+        "2": "Not viewed yet!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 18,
+      "title": "Python Dev. 3",
+      "description": "We are in need for an independent Python Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "part-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "You are rejected!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 19,
+      "title": "Python Dev.4",
+      "description": "We are in need for an independent Python Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "part-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "Not viewed yet!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 20,
+      "title": "Python Dev. 4",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "full-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "Not viewed yet!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 21,
+      "title": "JavaScript Developer",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "full-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "Not viewed yet!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 22,
+      "title": "JavaScript Developer 2",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "remote",
+      "category": "Development",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {
+        "1": "Not viewed yet!"
+      },
+      "organization": 2
+    },
+    {
+      "id": 23,
+      "title": "JavaScript Developer 3",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "remote",
+      "category": "Development",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {},
+      "organization": 2
+    },
+    {
+      "id": 24,
+      "title": "JavaScript Developer 3",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "part-time",
+      "category": "Office administration",
+      "likes": [],
+      "appliedUsers": {},
+      "organization": 2
+    },
+    {
+      "id": 25,
+      "title": "JavaScript Developer 5",
+      "description": "Developer who will facilitate film makers’ life by creating a budgeting tool for visual effects studio. Your experience with QT5 will contribute to this important mission of ours.",
+      "type": "part-time",
+      "category": "Office administration",
+      "likes": [
+        1
+      ],
+      "appliedUsers": {},
+      "organization": 2
+    }
+  ]
+}

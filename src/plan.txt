@@ -1,0 +1,41 @@
+- Routing
+    home
+    login
+        org
+        user
+    Ads
+    add Ads
+    candidates
+    user profile
+
+
+- Auth
+    * user login <>
+    * org login <>
+    * logout <>
+
+- Ads
+    list of Ads <>
+
+- org
+    add Ads <>
+    list of candidates <>
+    update ad(accept candidate) <>
+    delete account(deletes all ads for current org)
+
+- user
+    update Ad(add self as candidate) <>
+    update ad( add self to likers ) <>
+    list of ads( accepted/ rejected ) <>
+    update user data
+        * show user data <>
+        * on edit button clicked show edit form <>
+        * form has cancel and submit <>
+            * cancel closes the form <>
+            * submit sends the data to authService <>
+        * authService.updateUserData sends request to the server to update the user. <>
+        * when the request is successful update the authService.loggedInUser (changes should be seen in profile.component) <>
+
+    delete account <>
+
+- manage routes guards

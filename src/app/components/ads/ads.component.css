@@ -1,0 +1,13 @@
+li {
+  list-style-type: none;
+  padding: 20px;
+  margin-left: 140px;
+}
+
+div{
+  padding-top: 30px;
+  border-radius: 0;
+  background: whitesmoke;
+}
+
+

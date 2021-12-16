@@ -1,0 +1,20 @@
+<div>
+<form [formGroup]="loginForm" (ngSubmit)="login()">
+  <label> Email: <input formControlName="email" type="text" /> </label>
+  <br>
+  <label> Password: <input formControlName="password" type="text" /> </label>
+  <br>
+
+  <li *ngFor="let role of roles">
+    <input
+      type="radio"
+      id="{{ role }}"
+      formControlName="loginRole"
+      name="loginRole"
+      value="{{ role }}"
+    />
+    <label for="{{ role }}">{{ role | titlecase }}</label>
+  </li>
+  <button type="submit" [disabled]="!loginForm.valid">Enter</button>
+</form>
+</div>

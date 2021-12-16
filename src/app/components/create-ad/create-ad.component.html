@@ -1,0 +1,33 @@
+<div>
+  <h2>Add new</h2>
+<form [formGroup]="createAd" (ngSubmit)="onSubmit()">
+  <label> Title: <input type="text" formControlName="title" /> </label>
+
+  <br>
+
+  <label>
+    Description: <input type="text" formControlName="description" />
+  </label>
+
+  <br>
+
+  <label>
+    <h4>Type</h4>
+    <li *ngFor="let type of adTypes">
+      <input type="radio" formControlName="type" value="{{ type }}" />
+      <label for="{{ type }}">{{ type | titlecase }}</label>
+    </li>
+  </label>
+
+  <label>
+    <h4>Category</h4>
+    <li *ngFor="let category of adCategory">
+      <input type="radio" formControlName="category" value="{{ category }}" />
+      <label for="{{ category }}">{{ category | titlecase }}</label>
+    </li>
+  </label>
+
+  <br>
+  <button type="submit">create ad</button>
+</form>
+</div>
